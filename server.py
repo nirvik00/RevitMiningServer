@@ -5,6 +5,11 @@ from pydantic import BaseModel
 from src.objects import SpaceObj, EquipmentObj
 from src.src_driver import ProcessDriver
 
+import logging
+log = logging.getLogger('werkzeug')
+log.setLevel(logging.ERROR)
+
+#
 app= Flask(__name__)
 
 def driver(data):
