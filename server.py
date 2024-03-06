@@ -46,7 +46,7 @@ def post_spaces_equipments():
     return {"message": "data received from revit client"}
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=777777, debug=False)
+    app.run(host='0.0.0.0', port=7777, debug=True)
     
 
 # flask --app server.py --debug run
